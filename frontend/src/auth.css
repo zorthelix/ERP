@@ -1,0 +1,104 @@
+/* Workshop Index design: entry screens use index tabs, shelf-divider geometry, and register metadata bands rather than generic SaaS-card styling. */
+
+.auth-copy:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    180deg,
+    transparent 0,
+    transparent 78px,
+    rgba(255, 255, 255, 0.055) 79px,
+    transparent 80px
+  );
+  pointer-events: none;
+}
+
+.auth-copy:after {
+  right: -7vw;
+  bottom: -8vw;
+  width: 32vw;
+  height: 43vw;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 0;
+  box-shadow:
+    -40px 37px 0 -1px var(--cobalt),
+    -80px 74px 0 -1px rgba(255, 255, 255, 0.13),
+    -120px 111px 0 -1px rgba(255, 255, 255, 0.08);
+  transform: skewY(-17deg);
+  opacity: 0.7;
+}
+
+.auth-index-tab {
+  display: block;
+  width: 58px;
+  height: 12px;
+  margin: 20px 0 0;
+  background: var(--cobalt);
+  box-shadow: 17px 12px 0 rgba(255, 255, 255, 0.2);
+}
+
+.auth-pitch h1 {
+  margin-top: 22px;
+}
+
+.auth-image {
+  opacity: 0.22;
+}
+
+.auth-image:after {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 246, 241, 0.98),
+    rgba(247, 246, 241, 0.82)
+  );
+}
+
+.auth-form {
+  width: min(440px, 100%);
+  padding: 32px 36px 36px;
+  border: 1px solid rgba(22, 34, 55, 0.18);
+  border-top: 6px solid var(--cobalt);
+}
+
+.auth-form:before {
+  content: "";
+  position: absolute;
+  right: 28px;
+  top: -6px;
+  width: 66px;
+  height: 6px;
+  background: var(--ink);
+}
+
+.auth-form h2 {
+  margin-bottom: 18px;
+}
+
+.document-band {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 -36px 20px;
+  padding: 9px 36px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font: 10px "DM Mono", monospace;
+  letter-spacing: 0.11em;
+}
+
+@media (max-width: 760px) {
+  .auth-form {
+    padding: 30px 23px;
+  }
+
+  .document-band {
+    margin: 0 -23px 20px;
+    padding: 9px 23px;
+  }
+
+  .auth-copy:after {
+    display: none;
+  }
+}
