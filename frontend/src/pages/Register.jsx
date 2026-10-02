@@ -3,6 +3,7 @@
 import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 
+import brandImage from '../components/image.png';
 import api, { messageFrom } from '../services/api.js';
 
 export default function Register({ onAuthenticated }) {
@@ -72,7 +73,7 @@ export default function Register({ onAuthenticated }) {
           className="brand-lockup light"
         >
           <img
-            src="D:\projects\6sem\StoreManagerIII\frontend\src\components\image.png"
+            src={brandImage}
             alt=""
           />
 

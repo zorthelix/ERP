@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 
 import { useState } from 'react';
+import brandImage from './image.png';
 
 const links = [
   {
@@ -67,7 +68,7 @@ export default function AppShell({
             className="brand-lockup"
           >
             <img
-              src="D:\projects\6sem\StoreManagerIII\frontend\src\pages\image.png"
+              src={brandImage}
               width="50"
               height="50"
               alt=""

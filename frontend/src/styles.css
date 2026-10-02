@@ -114,11 +114,6 @@ textarea {
   width: 31px;
   height: 31px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-}
-
-.brand-lockup.light img {
-  filter: none;
 }
 
 .spine-caption,
