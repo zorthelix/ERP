@@ -1,7 +1,6 @@
 # Store Manager
 
-Store Manager is a new, self-contained inventory and sales-management application built with **Node.js 20+**, **Express 5**, **PostgreSQL 18**, **pg**, **bcrypt**, **JWT**, **React**, **Vite**, **Axios**, and **Recharts**. It does not use MySQL, tRPC,  OAuth, or an existing ERP template.
-
+Store Manager is a new, self-contained inventory and sales-management application built with **Node.js 20+**, **Express 5**, **PostgreSQL 18**, **pg**, **bcrypt**, **JWT**, **React**, **Vite**, **Axios**, and **Recharts**.
 ## Project tree
 
 ```text
